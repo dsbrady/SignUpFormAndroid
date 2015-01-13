@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                tools:context=".LoginActivity">
+
+	<LinearLayout
+		android:id="@+id/fields"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:id="@+id/username_label"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="25"
+				android:text="@string/username"/>
+
+			<EditText
+				android:id="@+id/username_field"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="75"
+				android:hint="@string/username_hint"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="25"
+				android:text="@string/password_label"/>
+
+			<EditText
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="75"
+				android:hint="@string/password_hint"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="25"
+				android:text="@string/passwordConfirm_label"/>
+
+			<EditText
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="75"
+				android:hint="@string/passwordConfirm_hint"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/submit_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignRight="@id/fields"
+		android:layout_below="@id/fields"
+		android:text="@string/submit"/>
+	<!--
+		<Button
+			android:id="@+id/ok_button"
+			android:layout_below="@id/cancel_button"
+			android:layout_toRightOf="@id/cancel_button"
+			android:text="@string/ok"
+			android:textSize="32sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<Button
+			android:id="@+id/cancel_button"
+			android:text="@string/cancel"
+			android:textSize="32sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	-->
+</RelativeLayout>
